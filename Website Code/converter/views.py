@@ -13,7 +13,7 @@ def homepage(request):
         face_classifier = cv2.CascadeClassifier('converter/haarcascade_frontalface_default.xml')
         eye_classifier = cv2.CascadeClassifier('converter/haarcascade_eye.xml')
         if webcam:
-            video_cap = cv2.VideoCapture(0) # use 0,1,2..depanding on your webcam
+            video_cap = cv2.VideoCapture(1) # use 0,1,2..depanding on your webcam
         
         # else:
         #     video_cap = cv2.VideoCapture("videoFile.mp4")
