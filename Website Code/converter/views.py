@@ -21,6 +21,8 @@ def homepage(request):
         # Capture frame-by-frame
         ret, img = video_cap.read()
 
+        if ret == False:
+            break
 
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         faces = face_classifier.detectMultiScale(gray, 1.05, 3)
