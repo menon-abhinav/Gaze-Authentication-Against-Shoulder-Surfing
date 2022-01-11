@@ -22,7 +22,7 @@ def homepage(request):
         ret, img = video_cap.read()
 
         if ret == False:
-            break
+            return HttpResponse('Camera Issue')
 
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         faces = face_classifier.detectMultiScale(gray, 1.05, 3)
