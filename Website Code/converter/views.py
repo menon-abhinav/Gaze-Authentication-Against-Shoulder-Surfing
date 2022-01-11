@@ -1,6 +1,5 @@
 from django.http import HttpResponse
 from django.shortcuts import render,redirect
-from imutils.video import WebcamVideoStream
 import cv2
 
 # Create your views here.
@@ -13,7 +12,7 @@ def homepage(request):
     face_classifier = cv2.CascadeClassifier('converter/haarcascade_frontalface_default.xml')
     eye_classifier = cv2.CascadeClassifier('converter/haarcascade_eye.xml')
     if webcam:
-        video_cap = WebcamVideoStream() # use 0,1,2..depanding on your webcam
+        video_cap = cv2.VideoCapture(0)  # use 0,1,2..depanding on your webcam
         print("Check ",video_cap)
     
     # else:
