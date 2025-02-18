@@ -10,7 +10,8 @@
 - 📊 **High Accuracy** – Achieves **95% accuracy** in gaze tracking and **98% effectiveness** in preventing unauthorized access.
 - 🖥 **Scalability** – Potential applications in **drowsiness detection, AR/VR, and secure logins**.
 
-# Publication: https://ijsrem.com/download/gaze-gesture-authentication-system-against-shoulder-surfing-attacks/
+# Publication: 
+https://ijsrem.com/download/gaze-gesture-authentication-system-against-shoulder-surfing-attacks/
 
 ## 🛠️ Tech Stack
 
